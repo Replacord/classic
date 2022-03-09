@@ -6,16 +6,16 @@ var client = '1.9.4'
 window.onload = function() {
  // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyAxAqkFw8oIJiHyLAQllDk4W9bh3pbBC4g",
-    authDomain: "unblocked-infinite-a9e25.firebaseapp.com",
-    databaseURL: "https://unblocked-infinite-a9e25-default-rtdb.firebaseio.com",
-    projectId: "unblocked-infinite-a9e25",
-    storageBucket: "unblocked-infinite-a9e25.appspot.com",
-    messagingSenderId: "267045856766",
-    appId: "1:267045856766:web:baa6dc5285d5dcf322ccaf",
-    measurementId: "G-WR56G0NC25"
-  };
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyApuJ-s0S3Fcxwp4H1HpxQqEsZy7zP-iVs",
+  authDomain: "replacord-v1-archive.firebaseapp.com",
+  projectId: "replacord-v1-archive",
+  storageBucket: "replacord-v1-archive.appspot.com",
+  messagingSenderId: "824452217737",
+  appId: "1:824452217737:web:bc6b0c9f8949ef7f5cbf58",
+  measurementId: "G-5SCVLP2KPG"
+};
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   var db = firebase.database();
