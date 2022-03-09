@@ -1,4 +1,3 @@
-import { html } from 'https://cdn-cdn.glitch.me/libraies/BetterDOMjs.js'
 var pfpurle = localStorage.getItem("url");
 var namee = localStorage.getItem("name");
 var client = '1.9.4'
