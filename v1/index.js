@@ -384,7 +384,7 @@ firebase.database().ref().child(roomcode).child('name').get().then((snapshot) =>
 
 
 
-const htes = "<a href='../index.html' ><button id='unb' >Home</button></a> <a href='../proxies/index.html' > <button id='unb'>Proxies</button></a> <a href='../games/index.html'> <button id='unb'>Games</button></a> <a href='index.html?code=chatroom1' > <button id='unb'>Chat</button></a> <button onclick='makechatroom()' id='unb'>Create a room</button> <button id='unb' onclick='makeainvite()'>Make A Invite</button> " + '<title>' + snapshot.val() + ' || Scuffed Discord</title>'
+const htes = "<button onclick='makechatroom()' id='unb'>Create a room</button> <button id='unb' onclick='makeainvite()'>Make A Invite</button> " + '<title>' + snapshot.val() + ' || Replacord v1 </title>'
 
      bttns.innerHTML = htes
     title.textContent = snapshot.val()
@@ -442,10 +442,10 @@ if (roomname == null || roomname == "") {
 firebase.database().ref(roomcode + '/').set({
     name: roomname,
   });
-window.location.href = 'https://esycmp.glitch.me?appID=3&code=' + roomcode
+window.location.href = 'https://replacord.github.io/classic/v1/invite.html?code=' + roomcode
 }
 }
 
 function makeainvite(params) {
-  alert('https://essycomp.glitch.me?appID=3&code=' + roomcode)
+  alert('https://replacord.github.io/classic/v1/invite.html?code=' + roomcode)
 }
