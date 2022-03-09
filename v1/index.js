@@ -341,7 +341,7 @@ return localStorage.getItem("url");
     }
   }
 
-  app = new MEME_CHAT();
+  let app = new MEME_CHAT();
   // if this is a new user then take them to the home screen
   if (localStorage.getItem("name") == null) {
     app.home();
