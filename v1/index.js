@@ -159,7 +159,6 @@ var time = (dateee.getHours()) + ':' + dateee.getMinutes() + ' am'
             }
             parent.create_load("chat_content_container");
             parent.send_message(chat_input.value);
-            
             chat_input.value = "";
             // Focus on the input there after
             chat_input.focus();
@@ -180,9 +179,6 @@ var time = (dateee.getHours()) + ':' + dateee.getMinutes() + ' am'
         parent.home();
       };
 
-html.h1('The Chat Program Has Moved Sites')
-html.buttononclick('Back', 'history.back()')
-html.h3('','link')
       chat_logout_container.append(chat_logout);
       chat_input_container.append(chat_input, chat_input_send);
       chat_inner_container.append(
@@ -207,13 +203,11 @@ html.h3('','link')
         return;
       }
 
-html.a('Replacord', 'https://devcompessays.glitch.me', 'linkbase')
 
 let date = new Date();
 var datee = (date.getMonth() + 1) + "/" + date.getDate()
 let dateee = new Date();
 
-html.append('linkbase', 'link')
       if (dateee.getHours() > 12 ) {
 
 var time = (dateee.getHours() - 12) + ':' + dateee.getMinutes() + ' pm'
@@ -225,7 +219,7 @@ var time = (dateee.getHours()) + ':' + dateee.getMinutes() + ' am'
 
 
 }
-      
+
       var messages = db.ref(room);
       messages.once("value", function(snapshot) {
         var index = parseFloat(snapshot.numChildren()) + 1;
